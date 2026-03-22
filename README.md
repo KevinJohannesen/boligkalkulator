@@ -1,12 +1,23 @@
+<div align="center">
+
 # Boligkalkulator
 
-A Norwegian mortgage calculator that helps you figure out what you can afford — monthly costs, stress tests, loan comparisons, and more.
+**A Norwegian mortgage calculator — figure out what you can afford before you buy.**
+
+![Next.js](https://img.shields.io/badge/Next.js-16.2-black?logo=next.js)
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-38BDF8?logo=tailwindcss)
+
+**[▶ Try it at boligkalkulator-eight.vercel.app](https://boligkalkulator-eight.vercel.app/)**
+
+</div>
 
 ---
 
 ## Overview
 
-**Boligkalkulator** is a web app built for anyone buying property in Norway. It applies real Norwegian lending rules (5× income cap, 10% equity requirement, +3% stress test) and gives you a clear picture of your financial situation before you commit to a purchase.
+**Boligkalkulator** is a web app built for anyone buying property in Norway. It applies real Norwegian lending rules — 5× income cap, 10% equity requirement, and the mandatory +3% stress test — and gives you a clear picture of your financial situation before you commit to a purchase.
 
 ---
 
@@ -14,14 +25,14 @@ A Norwegian mortgage calculator that helps you figure out what you can afford �
 
 - **Max loan calculator** — based on income, equity, and Norwegian regulations
 - **Monthly cost breakdown** — principal, interest, fees, and total budget
-- **Stress test** — simulates a +3% interest rate increase
+- **Stress test** — simulates a +3% interest rate increase per lending regulations
 - **Debt ratio (gjeldsgrad)** — visual indicator with regulatory thresholds
 - **Annuity vs. serial loan** — compare repayment structures side by side
 - **Amortization table** — full month-by-month schedule
 - **Purchase cost estimator** — document fee, valuation, BSU tips
-- **Sensitivity analysis** — see how your costs change across rate scenarios
-- **BSU helper** — guidance when equity is below 10%
-- **Charts** — donut, line, and stacked bar visualizations via Recharts
+- **Sensitivity analysis** — see how costs change across interest rate scenarios
+- **BSU helper** — guidance when equity falls below the 10% requirement
+- **Charts** — donut, line, and stacked bar visualizations
 
 ---
 
