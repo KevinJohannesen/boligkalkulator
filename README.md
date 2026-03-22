@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Boligkalkulator
 
-## Getting Started
+A Norwegian mortgage calculator that helps you figure out what you can afford — monthly costs, stress tests, loan comparisons, and more.
 
-First, run the development server:
+---
+
+## Overview
+
+**Boligkalkulator** is a web app built for anyone buying property in Norway. It applies real Norwegian lending rules (5× income cap, 10% equity requirement, +3% stress test) and gives you a clear picture of your financial situation before you commit to a purchase.
+
+---
+
+## Features
+
+- **Max loan calculator** — based on income, equity, and Norwegian regulations
+- **Monthly cost breakdown** — principal, interest, fees, and total budget
+- **Stress test** — simulates a +3% interest rate increase
+- **Debt ratio (gjeldsgrad)** — visual indicator with regulatory thresholds
+- **Annuity vs. serial loan** — compare repayment structures side by side
+- **Amortization table** — full month-by-month schedule
+- **Purchase cost estimator** — document fee, valuation, BSU tips
+- **Sensitivity analysis** — see how your costs change across rate scenarios
+- **BSU helper** — guidance when equity is below 10%
+- **Charts** — donut, line, and stacked bar visualizations via Recharts
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | [Next.js 16](https://nextjs.org) (App Router) |
+| Language | TypeScript |
+| UI Components | [shadcn/ui](https://ui.shadcn.com) + [Radix UI](https://www.radix-ui.com) |
+| Styling | Tailwind CSS v4 |
+| Charts | [Recharts](https://recharts.org) |
+| Forms | React Hook Form + Zod |
+| Animations | tw-animate-css |
+
+---
+
+## Installation
+
+**Prerequisites:** Node.js 18+ and [pnpm](https://pnpm.io)
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Clone the repo
+git clone https://github.com/your-username/boligkalkulator.git
+cd boligkalkulator
+
+# Install dependencies
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Start the development server
+pnpm dev
+```
 
-## Learn More
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Build for production
+pnpm build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Start production server
+pnpm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+app/          # Next.js App Router pages and layout
+components/
+  calculator/ # All mortgage calculator components
+  ui/         # shadcn/ui base components
+hooks/        # Custom React hooks
+lib/          # Loan calculation logic and utilities
+styles/       # Global CSS
+```
